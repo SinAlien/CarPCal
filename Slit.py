@@ -1,8 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
 import joblib
 from with_pipe import columns,PrepProcesor
 
@@ -10,9 +8,7 @@ from sklearn.model_selection import train_test_split, KFold, cross_val_score
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
-#model = joblib.load('car_price_pipeline.pkl')
 preprocessor = joblib.load('car_price_pipeline.pkl')
-#preprocessor = PrepProcesor()
 
 # تنظیم صفحه Streamlit
 st.title("تحلیل داده‌های خودرو و پیش‌بینی قیمت")
